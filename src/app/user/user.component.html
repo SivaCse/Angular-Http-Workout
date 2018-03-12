@@ -1,0 +1,21 @@
+<div class="container">
+    <button class="btn btn-success" (click)="addUser()">Add</button>
+    <button class="btn btn-warning" (click)="updateUser()">Update</button>
+    <button class="btn btn-danger" (click)="deleteUser()">Delete</button>
+    <p></p>
+    <p></p>
+    <table class="table table-condensed table-bordered table-hover">
+        <thead>
+            <tr>
+            <th>User Name</th>
+            <th>age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users">
+            <td>{{user.userName}}</td>
+            <td>{{user.age}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,21 @@
+<div class="container">
+        <button class="btn btn-success" (click)="saveReports()">Add</button>
+        <button class="btn btn-warning" (click)="updateReports()">Update</button>
+        <button class="btn btn-danger" (click)="deleteUser()">Delete</button>
+        <p></p>
+        <p></p>
+        <table class="table table-condensed table-bordered table-hover">
+            <thead>
+                <tr>
+                <th>reportName</th>
+                <th>description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let report of reports">
+                <td>{{report.reportName}}</td>
+                <td>{{report.description}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>

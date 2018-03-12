@@ -1,0 +1,1 @@
+export const AUTH_TOKEN = 'Some Auth Token';
